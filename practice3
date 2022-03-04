@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+
+int main()
+{
+    double x,y,z,check1,check2,check3,check4,u;
+    scanf("%lf%lf%lf", &x,&y,&z);
+    check1 = pow( 8 + fabs(x-y) * fabs(x-y) +1, 1.0/3.0);
+    check2 = x*x + y*y + 2;
+    check3 = exp( fabs(x-y) );
+    check4 = pow(tan(z)*tan(z) + 1, x);
+    u = (check1/check2) - check3 * check4;
+    printf("%lf\n%lf\n%lf\n%lf\nresult =%lf\n", check1,check2,check3,check4,u); 
+}
+
